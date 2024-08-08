@@ -2,7 +2,7 @@ import type { SubtleCrypto } from '@cloudflare/workers-types/experimental';
 import { subtle } from 'uncrypto';
 
 export async function timingSafeEqual(a: Uint8Array, b: Uint8Array): Promise<boolean> {
-  if (globalThis.navigator?.userAgent === 'Cloudflare Workers') {
+  if (globalThis.navigator?.userAgent === 'Cloudflare-Workers') {
     return (subtle as unknown as SubtleCrypto).timingSafeEqual(a, b)
   }
 

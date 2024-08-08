@@ -1,7 +1,8 @@
 {
   "name": "@eckidevs/cf-pbkdf2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
+  "author": "Eckhardt-D <eckhardt@dreyer.com.na> (https://github.com/Eckhardt-D)",
   "license": "MIT",
   "exports": {
     ".": {
@@ -16,6 +17,8 @@
     }
   },
   "files": ["dist"],
+  "repository": "github:Eckhardt-D/cf-pbkdf2",
+  "homepage": "https://github.com/Eckhardt-D/cf-pbkdf2#readme",
   "scripts": {
     "test": "bun test",
     "test:cf": "vitest run",
